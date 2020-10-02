@@ -1,9 +1,8 @@
 #include "ListasDobles.h"
 #include "Persona.h"
 #include <string.h>
-
 ///INICIALIZACION DE LA LISTA.
-nodoDoble * IncializarListaDoble()
+nodoDoble * InicializarListaDoble()
 {
     return  NULL;
 }
@@ -41,20 +40,16 @@ nodoDoble * BuscarUltimoNodoIterativo (nodoDoble * lista)   ///ANDUVO
 {
     nodoDoble * aux = lista;
 
-    if(aux)
-    {
         while(aux->siguiente!=NULL)
         {
             aux = aux->siguiente;
         }
-    }
     return aux;
 }
 
 
 ///fUNCION PARA BUSACAR EL ULTIMO ELEMENTO DE FORMA RECURSIVA
 nodoDoble * BuscarUltimoNodoRecursivo (nodoDoble * lista)    ////ANDUVO
-
 {
     nodoDoble * aux;
 
@@ -256,27 +251,44 @@ nodoDoble * BorrarPrimeroNodoDoble (nodoDoble * lista)
 
     return lista;
 }
-//MOSTAR NODO UTILIZA LA FUNCION DE PERSONA
 
+nodoDoble * BorrarUltimoNodoDoble(nodoDoble * lista)
+{
+    if(lista)
+    {
+        nodoDoble * seg = lista;
+        nodoDoble * ante;
+
+        while(seg->siguiente != NULL)
+        {
+            ante = seg;
+            seg = seg->siguiente;
+        }
+
+        if(seg)
+        {
+            ante->siguiente = NULL;
+            free(seg);
+        }
+    }
+    return lista;
+}
+
+//MOSTAR NODO UTILIZA LA FUNCION DE PERSONA
 void MostarNodoDoble (nodoDoble * lista)
 {
     mostrarPersonas(lista->dato); ///funcion
-    printf(" siguiente->%i \n", lista->siguiente);
-    printf(" anterior->%i \n\n", lista->anterior);
 }
 //MOSTRAR LA LISTA COMPLETA, UILIZA MOSTAR NODO
 void MostarListasDobles (nodoDoble * lista)
 {
     nodoDoble * aux = lista;
 
-    if(aux)
-    {
-        while(aux!=NULL)
+    while(aux)
         {
             MostarNodoDoble(aux);  //funcion
             aux = aux->siguiente;
         }
-    }
 }
 
 

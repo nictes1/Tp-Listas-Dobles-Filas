@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1584205420 source:n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas dobles\trabajo practico listas dobles\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1600569470 source:n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas dobles\trabajo practico listas dobles\persona.c
+	"Persona.h"
+
+1600649321 n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas dobles\trabajo practico listas dobles\persona.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1601077815 source:n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas dobles\trabajo practico listas dobles\tplistasdobles.c
+	"TPListasDobles.h"
+
+1601069790 n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas dobles\trabajo practico listas dobles\tplistasdobles.h
+	<stdio.h>
+	<stdlib.h>
+	"ListasDobles.h"
+	<string.h>
+
+1601069790 n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas dobles\trabajo practico listas dobles\listasdobles.h
+	<stdio.h>
+	<stdlib.h>
+	"Persona.h"
+	"ListasDobles.h"
+
+1601598783 source:n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas dobles\trabajo practico listas dobles\listas dobles.c
+	"ListasDobles.h"
+	"Persona.h"
+	<string.h>
+
